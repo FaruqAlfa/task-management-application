@@ -85,5 +85,5 @@ func (api *API) DeleteUser(w http.ResponseWriter, r *http.Request) {
        return
    }
    w.WriteHeader(http.StatusOK)
-   json.NewEncoder(w).Encode(model.SuccessResponse{Message: "student berhasil dihapus"})
+   json.NewEncoder(w).Encode(model.SuccessResponse{Message: "user berhasil dihapus"})
 }
